@@ -34,13 +34,26 @@ body {
     display: flex;
     justify-content: space-around;
    }
-    
-   .background-red{
-    background-color: red;
-   }
    .show-lists{
     width: 200px;
     position: absolute;
     right: 370px;
     top: 70px;
+    background-color: #fff;
+   }
+   .background-red{
+    background-color: #FF6666;
+    color: white;
+   }
+   .pull-down-list{
+    display: none;
+    padding: 15px 35px 15px 15px;
+    border: 1px solid #eee;
+   }
+   .contents{
+    height: 100vh;
+    background-color: #f0f0f0;
+   }
+   .list-status{
+    width: 230px;
    }
