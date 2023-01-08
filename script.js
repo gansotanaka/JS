@@ -3,6 +3,8 @@ console.log(lists)
 window.addEventListener('load', function(){
     const pullDownButton = document.getElementById("lists")
     const pullDownParents = document.getElementById("pull-down")
+    const pullDownChild = document.querySelectorAll(".pull-down-list")
+    const currentList = document.getElementById("current-list")
 
     pullDownButton.addEventListener('mouseover', function(){
         this.setAttribute('style', "background-color: blue;")
@@ -24,4 +26,15 @@ window.addEventListener('load', function(){
         }
     })
     
+    pullDownChild.forEach(function(list){
+        list.addEventListener('click', function(){
+            const value =list.innerHTML
+            currentList.innerHTML = value
+            console.log(value)
+        })
+    })
+
+    document.getElementById('list1').addEventListener('click', function(){
+        location.href = 'list1 index.html';
+    })
 })
